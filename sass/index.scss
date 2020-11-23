@@ -5,6 +5,7 @@ $height: 36px;
 $center: center;
 $left: left;
 $right: right;
+$color: #333;
 
 
 //header部分
@@ -12,7 +13,7 @@ $right: right;
     width: $width;
     height: $height;
     line-height: $height;
-    background-color: #333;
+    background-color: $color;
     .header-box{
         width: $center-width;
         height: $height;
@@ -245,50 +246,99 @@ $right: right;
 //new部分
 .new{
     width: $width;
+    position: relative;
+    //new部分
     .new-box{
         width: $center-width;
         margin: 30px auto;
+        padding-bottom: 100px;
         background-color: red;
         .new-tit{
+            background: green;
             margin-bottom: 20px;
             h1{
                 display: inline-block;
                 font-size: 28px;
-                color: #333;
-
+                color: $color;
+                a{
+                    &:hover{
+                        color: $bgc;
+                    }
+                }
             }
             h5{
                 font-size: 14px;
-                color: #333;
+                color: $color;
                 padding-left: 20px;
                 display: inline-block;
                 display: inline;
             }
         }
         .swiper{
+            background-color: orange;
+            .swiper-prev{
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                background: #e2c199;
+                color: #fff;
+                line-height: 50px;
+                text-align: $center;
+                span{
+                    font-size: 32px;
+                }
+            }
+            .swiper-next{
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                background: #e2c199;
+                color: #fff;
+                line-height: 50px;
+                text-align: $center;
+                span{
+                    font-size: 26px;
+                }
+            }
             .swiper-box{
                 .swiper-text{
                     ul{
+                        overflow: hidden;
                         li{
                             width: 265px;
                             float: left;
-                            img{
-                                width: 265px;
-                                height: 265px;
-                                display: inline-block;
+                            background-color: #ccc; 
+                            margin-left: 10px;
+                            .li-one{
+                                a{
+                                    img{
+                                        width: 265px;
+                                        height: 265px;
+                                        display: inline-block;
+                                    }
+                                } 
                             }
-                            div{
+                            .li-two{
                                 font-size: 13px;
                                 text-align: $center;
                                 h4{
-                                    color: #333;
+                                    
                                     width: 166px;
                                     line-height: 20px;
                                     padding: 0 auto 4px;
-                                    margin: 0 50px;
+                                    margin: 0 50px 4px;
                                     overflow: hidden;
+                                    a{
+                                        color: $color;
+                                    }
+                                }
+                                span{
+                                    padding: 1px 0 9px;
                                 }
                             }
+                        }
+                        .lili{
+                            margin-left: 0;
                         }
                     }
                 }
@@ -296,4 +346,256 @@ $right: right;
 
         }
     }
+    //吸顶部分
+    .xiding-l{
+        z-index: 999;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #fff;
+        ul{
+            li{
+                width: 108px;
+                border: 1px solid #bb3343;
+                font-size: 16px;
+                text-align:$center;
+                height: 38px;
+                line-height: 38px;
+                font-weight: 700;
+                padding: 3px 11px 0;
+                a{
+                    img{
+                        float: $left;
+                        width: 30px;
+                        height: 30px;
+                    }
+                    span{
+                        float: left;
+                        font-size: 12px;
+                        line-height: 14px;
+                        width: 38px;
+                        color: #bb3343;
+                    }
+                }
+                
+            }
+        }
+    }
 }
+
+//list部分
+.lists{
+    width: $width;
+    background: #f4f0ea;
+    //renqi部分
+    .renqi{
+        width: $center-width;
+        margin: 0 auto;
+        padding: 60px 0;
+        .renqi-top{
+            background-color: orchid;
+            padding-bottom: 20px;
+            font-size: 14px;
+            overflow: hidden;
+            text-align: $center;
+            h3{
+                font-size: 28px;
+                color: $color;
+                margin-right: 20px;
+                float: $left;
+                line-height: 1;
+                a{
+                    color: $color;
+                    &:hover{
+                        color: $bgc;
+                    }
+                }
+                
+            }
+            h6{
+                float: $left;
+                a{
+                    margin-right: 55px;
+                    padding-bottom: 2px;
+                    border-bottom: 2px solid $bgc;
+                    color: $bgc;
+                }
+            }
+            h4{
+                a{
+                    color: $color;
+                }
+                float: left;
+                
+            h2{
+                float: $right;
+            }
+        }
+        }
+        .renqi-bottom{
+            overflow: hidden;
+            .renqi-left{
+                width: 390px;
+                height: 570px;
+                background-color: green;
+                float: left;
+                .left-i{
+                    div{
+                        border: 1px solid $bgc;
+                        img{
+                            width: 320px;
+                            height: 320px;
+                            display: block;
+                            margin: 40px 35px;
+                            background-color: #fff;
+                        }
+                    }
+                }
+                .left-b{
+                    text-align: $center;
+                    line-height: 26px;
+                    font-size: 18px;
+                    .left-s{
+                        padding-bottom: 10px;
+                        span{
+                            height: 20px;
+                            line-height: 20px;
+                            font-size: 12px;
+                            color: #fff;
+                            background-color: #e36844;
+                            padding: 0 5px;
+                        }
+                    }
+                    h3{
+                        width: 248px;
+                        line-height: 26px;
+                        margin: 0 auto 13px;
+                        a{
+                            font-weight: bold;
+                            color: $color;
+                            margin-bottom: 13px;
+                        }
+                    }
+                    i{
+                        color: #d4282d;
+                        padding: 1px 0 9px;
+                    }
+                }
+            }
+            .renqi-right{
+                background-color: blue;
+                overflow: hidden;
+                ul{
+                    overflow: hidden;
+                    li{
+                        width: 223px;
+                        float: left;
+                        background-color: orange;
+                        margin: 0 5px;
+                        .li-one{
+                            width: 223px;
+                            height: 180px;
+                            background-color: purple;
+                            a{
+                                width: 123px;
+                                height: 180px;
+                                display: block;
+                                img{
+                                    width: 180px;
+                                    height: 180px;
+                                    display: inline-block;
+                                    margin: 0 21.5px;
+                                }
+                            }
+                        }
+                        .li-two{
+                            text-align: $center;
+                            line-height: 26px;
+                            font-size: 18px;
+                            .left-s{
+                                span{
+                                    height: 20px;
+                                    line-height: 20px;
+                                    font-size: 12px;
+                                    color: #fff;
+                                    background-color: #e36844;
+                                    margin-bottom: 4px;
+                                }
+                            }
+                            h3{
+                                width: 136px;
+                                font-size: 12px;
+                                margin:0 auto 4px;
+                                line-height: 20px;
+                                a{
+                                    font-weight: bold;
+                                    color: $color;
+                                    margin-bottom: 13px;
+                                }
+                            }
+                            i{
+                                font-size: 13px;
+                                color: #d4282d;
+                                padding: 1px 0 9px;
+                            }
+                        }
+                    }
+                    .lili{
+                        margin-bottom: 14px;
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+//foot部分
+.foot{
+    width: $width;
+    background-color: #414141;
+    .foot-box{
+        width: $center-width;
+        overflow: hidden;
+        height: 268px;
+        padding-top: 37px;
+        margin: 0 auto;
+        ul{
+            overflow: hidden;
+            li{
+                float: $left;
+                div{
+                    line-height: 50px;
+                    text-align: $center;
+                    i{
+                        // display: inline-block;
+                        height: 50px;
+                        width: 50px;
+                        background: url(../img/icon-yxfoot.webp) no-repeat;
+                        background-position: 0 -134px;
+                        margin-right: 17px;
+                        float: $left;
+                    }
+                    span{
+                        font-size: 18px;
+                        height: 50px;
+                        line-height: 50px;
+                        color: #fff;
+                        float: $left;
+                    }
+                }
+                
+            }
+            .lil{
+                margin: 0 122px;
+            }
+            .lili{
+                margin-right: 122px;
+            }
+            .lii{
+                float: $right;
+            }
+        }
+    }
+}
+

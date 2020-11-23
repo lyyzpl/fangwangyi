@@ -1,0 +1,81 @@
+$left: left;
+$right: right;
+$center: center;
+
+.goto{
+    width: 386px;
+    background-color: red;
+    margin: 30px auto;
+    position: relative;
+    .x{
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        background: url(../img/icon-yxfixedtool.webp) no-repeat;
+        background-position: -2px -2px;
+    }
+    .goto-box{
+        width: 300px;
+        background-color: green;
+        margin: 0 auto;
+        .goto-top{
+            padding: 30px 0 10px;
+            font-size: 18px;
+            // width: 306px;
+            .haha{
+                margin-left: 25px;
+                a{
+                    color: #333;
+                }
+            }
+            .hehe{
+                margin-left: 45px;
+                a{
+                    color: #999;
+                }
+            }
+            i{
+                width: 1px;
+                height: 20px;
+                color: #999;
+                margin-left: 45px;
+            }
+        }
+        .goto-bottom{
+            .yz{
+                position: relative;
+                top: 0;
+                left: 216px;
+                padding-bottom: 6px;
+                a{
+                    font-size: 12px;
+                    color: #666;
+                }
+            }
+            .iphone{
+                width: 300px;
+                height: 38px;
+                box-sizing: border-box;
+                color: #999;
+                border: 1px solid #ccc;
+                background-color: #fff;
+                span{
+                    width: 21px;
+                    height: 24px;
+                    padding: 7px;
+                }
+                input{
+                    width: 222px;
+                    height: 36px;
+                    line-height: 36px;
+                    padding-left: 10px;
+                    border: none;
+                    color: #999;
+                }
+            }
+        }
+    }
+    
+}
