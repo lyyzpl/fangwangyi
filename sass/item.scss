@@ -1,0 +1,286 @@
+$bgc: #cc9756;
+$width: 100%;
+$center-width: 1090px;
+$height: 36px;
+$center: center;
+$left: left;
+$right: right;
+$color: #333;
+
+
+//header部分
+.header{
+    width: $width;
+    height: $height;
+    line-height: $height;
+    background-color: $color;
+    .header-box{
+        width: $center-width;
+        height: $height;
+        line-height: $height;
+        margin: 0 auto;
+        // background-color: red;
+        .head-left{
+            width: 278px;
+            height: $height;
+            // background-color: green;
+            float: $left;
+            position: relative;
+            div{
+                padding-left: 26px;
+                a{
+                    color: $bgc;
+                    font-size: 12px;
+                    border-bottom: 1px solid $bgc;
+                    &:hover {color: #fff;}
+                    img{
+                        position: absolute;
+                        left: 0;
+                        top: 13px;
+                    }
+                }
+            }
+            
+        }
+        .head-right{
+            float: $right;
+            height: $height;
+            line-height: $height;
+            .list{
+                li{
+                    float: left;
+                    a{
+                        height: $height;
+                        line-height: $height;
+                        text-align: $center;
+                        color: #ccc;
+                        font-size: 12px;
+                        span{
+                            margin: 0 10px;
+                        }
+                        i{
+                            margin-left: 10px;
+                        }
+                        .last{
+                            margin-left: 0;
+                            margin-right: 6px;
+                        }
+                        &:hover{
+                            color: #fff;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    } 
+}
+
+//nav部分
+.nav{
+    width: $width;
+    // background-color: red;
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+    .nav-box{
+        width: $center-width;
+        margin: 0 auto;
+        // background: green;
+        overflow: hidden;
+        .nav-top{
+            // background-color: yellow;
+            padding-top: 24px;
+            width: $center-width;
+            overflow: hidden;
+            .nav-left{
+                width: 212px;
+                // background-color: green;
+                height: 60px;
+                float: left;
+                a{
+                    width: 212px;
+                    height: 60px;
+                    display: inline-block;
+                    i{ 
+                        width: 212px;
+                        height: 60px;
+                        display: block;
+                        background: url(../img/icon-yxtop.webp) no-repeat;
+                        background-position: 0 -298px;
+                    }
+                }
+            }
+            .nav-center{
+                float: right;
+                position: relative;
+                width: 532px;
+                height: 38px;
+                .nav-inp{
+                    width: 442px;
+                    height: 38px;
+                    padding-left: 38px;
+                    border: 1px solid $bgc;
+                    border-bottom-left-radius: 19px;
+                    border-top-left-radius: 19px;
+                    position: relative;
+                }
+                .nav-search{
+                    width: 90px;
+                    height: 38px;
+                    border: 1px solid $bgc;
+                    border-bottom-right-radius: 19px;
+                    border-top-right-radius: 19px;
+                    border-left: none;
+                    background-color: $bgc;
+                    position: absolute;
+                    top: 0;
+                    left: 442px;
+                }
+                .nav-show{
+                    a{
+                        color: $bgc;
+                        font-size: 12px;
+                        padding: 0 10px;
+                    }
+                    span{
+                        font-size: 12px;
+                        color: $bgc;
+                    }
+                }
+                .font{
+                    position: absolute;
+                    top: 12px;
+                    left: 20px;
+                    font-size: 16px;
+                    color: #ccc;
+                    z-index: 5;
+                }
+            }
+            .nav-right{
+                width: 134px;
+                height: 38px;
+                line-height: 38px;
+                text-align: $center;
+                float: right;
+                border: 1px solid $bgc;
+                border-radius: 19px;
+                margin-left: 49px;
+                position: relative;
+                a{
+                    font-size: 14px;
+                    color: $bgc;
+                    i{
+                        color: $bgc;
+                        font-size: 20px;
+                        margin-left: 22px;
+                        float: left;
+                    }
+                    .cart{
+                        color: 14px;
+                        float: left;
+                        margin-left: 5px;
+                    }
+                    .o{
+                        width: 19px;
+                        height: 19px;
+                        line-height: 19px;
+                        text-align: $center;
+                        display: block;
+                        background-color: red;
+                        color: #fff;
+                        float: left;
+                        margin-left: 10px;
+                        margin-top: 8px;
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+        .nav-buttom{
+            width: $width;
+            // background-color: blue;
+            .nav-list{
+                overflow: hidden;
+                li{
+                    margin-top: 27px;
+                    float: left;
+                    padding: 0 26px;
+                    font-size: 14px;
+                    a{
+                        font-size: 14px;
+                        display: block;
+                        padding-bottom: 7px;
+                        border-bottom: 3px solid #fff;
+                        color: #000;
+                        font-weight: bold;
+                        &:hover{
+                            color: $bgc;
+                            border-bottom: 3px solid $bgc;
+                        }
+                    }
+                }
+                .one{
+                    padding-left: 0;
+                    a{
+                        border-bottom: 3px solid $bgc;
+                        color: $bgc;
+                    }
+                }
+                .ten{
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+}
+
+// text部分
+.text{
+    .text-box{
+        background-color: green;
+        width: 1090px;
+        overflow: hidden;
+        margin: 0 auto;
+        .text-top{
+            overflow: hidden;
+            background-color: red;
+            padding: 20px 0;
+            li{
+                float: left;
+                font-size: 12px;
+                i{
+                    padding: 0 7px;
+                }
+            }
+        }
+        .text-bottom{
+            .text-lef{
+                width: 430px;
+                float: $left;
+                margin-right: 16px;
+                .lef-t{
+                    width: 430px;
+                    img{
+                        border: 1px solid #ccc;
+                        display: block;
+                        width: 430px;
+                        height: 430px;
+                    }
+                }
+                .lef-b{
+                    height: 76px;
+                    background-color: yellow;
+                    line-height: 76px;
+                    text-align: $center;
+                }
+            }
+            .text-rig{
+                width: 620px;
+                float: right;
+                .rig-t{
+                    
+                }
+            }
+        }
+    }
+}

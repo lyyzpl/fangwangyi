@@ -81,6 +81,7 @@ $color: #333;
     width: $width;
     // background-color: red;
     overflow: hidden;
+    border-bottom: 1px solid #ccc;
     .nav-box{
         width: $center-width;
         margin: 0 auto;
@@ -210,6 +211,7 @@ $color: #333;
                         display: block;
                         padding-bottom: 7px;
                         border-bottom: 3px solid #fff;
+                        font-weight: bold;
                         &:hover{
                             color: $bgc;
                             border-bottom: 3px solid $bgc;
@@ -252,9 +254,10 @@ $color: #333;
         width: $center-width;
         margin: 30px auto;
         padding-bottom: 100px;
-        background-color: red;
+        position: relative;
+        // background-color: red;
         .new-tit{
-            background: green;
+            // background: green;
             margin-bottom: 20px;
             h1{
                 display: inline-block;
@@ -275,7 +278,7 @@ $color: #333;
             }
         }
         .swiper{
-            background-color: orange;
+            // background-color: orange;
             .swiper-prev{
                 width: 50px;
                 height: 50px;
@@ -289,6 +292,7 @@ $color: #333;
                 }
             }
             .swiper-next{
+                z-index: 999;
                 width: 50px;
                 height: 50px;
                 border-radius: 50%;
@@ -302,13 +306,13 @@ $color: #333;
             }
             .swiper-box{
                 .swiper-text{
-                    ul{
+                    .lilili{
                         overflow: hidden;
                         li{
                             width: 265px;
                             float: left;
-                            background-color: #ccc; 
-                            margin-left: 10px;
+                            // background-color: #ccc; 
+                            margin-left: 7px;
                             .li-one{
                                 a{
                                     img{
@@ -321,6 +325,8 @@ $color: #333;
                             .li-two{
                                 font-size: 13px;
                                 text-align: $center;
+                                width: 265px;
+                                background-color: #fff;
                                 h4{
                                     
                                     width: 166px;
@@ -393,7 +399,7 @@ $color: #333;
         margin: 0 auto;
         padding: 60px 0;
         .renqi-top{
-            background-color: orchid;
+            // background-color: orchid;
             padding-bottom: 20px;
             font-size: 14px;
             overflow: hidden;
@@ -437,7 +443,7 @@ $color: #333;
             .renqi-left{
                 width: 390px;
                 height: 570px;
-                background-color: green;
+                // background-color: green;
                 float: left;
                 .left-i{
                     div{
@@ -483,19 +489,19 @@ $color: #333;
                 }
             }
             .renqi-right{
-                background-color: blue;
+                // background-color: blue;
                 overflow: hidden;
                 ul{
                     overflow: hidden;
                     li{
                         width: 223px;
                         float: left;
-                        background-color: orange;
+                        // background-color: orange;
                         margin: 0 5px;
                         .li-one{
                             width: 223px;
                             height: 180px;
-                            background-color: purple;
+                            // background-color: purple;
                             a{
                                 width: 123px;
                                 height: 180px;
