@@ -326,6 +326,7 @@ $color: #333;
                                 font-size: 13px;
                                 text-align: $center;
                                 width: 265px;
+                                margin-top: 23px;
                                 h4{
                                     
                                     width: 166px;
@@ -429,6 +430,9 @@ $color: #333;
             h4{
                 a{
                     color: $color;
+                    &:hover{
+                        color: $bgc;
+                    }
                 }
                 float: left;
                 

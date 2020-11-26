@@ -176,7 +176,7 @@ $color: #333;
                         float: left;
                     }
                     .cart{
-                        color: 14px;
+                        font-size: 14px;
                         float: left;
                         margin-left: 5px;
                     }
@@ -237,13 +237,13 @@ $color: #333;
 // text部分
 .text{
     .text-box{
-        background-color: green;
+        // background-color: green;
         width: 1090px;
         overflow: hidden;
         margin: 0 auto;
         .text-top{
             overflow: hidden;
-            background-color: red;
+            // background-color: red;
             padding: 20px 0;
             li{
                 float: left;
@@ -254,31 +254,206 @@ $color: #333;
             }
         }
         .text-bottom{
+            overflow: hidden;
             .text-lef{
                 width: 430px;
                 float: $left;
                 margin-right: 16px;
                 .lef-t{
                     width: 430px;
+                    height: 430px;
+                    position: relative;
                     img{
                         border: 1px solid #ccc;
                         display: block;
                         width: 430px;
                         height: 430px;
                     }
+                    .mask-img{
+                        width: 215px;
+                        height: 215px;
+                        background-color: orange;
+                        opacity: 0.4;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        cursor: move;
+                        display: none;
+                      }
                 }
                 .lef-b{
                     height: 76px;
-                    background-color: yellow;
+                    // background-color: yellow;
                     line-height: 76px;
                     text-align: $center;
+                    margin-top: 20px;
+                    border: 1px solid #ccc;
                 }
             }
             .text-rig{
                 width: 620px;
                 float: right;
+                position: relative;
+                overflow: hidden;
                 .rig-t{
-                    
+                    width: 620px;
+                    float: left;
+                    // height: 650px;
+                    .image{
+                        width: 620px;
+                        height: 405px;
+                        display: block;
+                    }
+                }
+                .move{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 310px;
+                    height: 310px;
+                    background: red;
+                    overflow: hidden;
+                    display: none;
+                    img{
+                        width: 620px;
+                        height: 620px;
+                        display: block;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                    }
+                }
+                .rig-c{
+                    margin-top: 20px;
+                    // background-color: #ccc;
+                    color: #333;
+                    font-size: 12px;
+                    margin-left: 12px;
+                    float: left;
+                    display: block;
+                    overflow: hidden;
+                    width: 100%;
+                    .c-1{
+                        overflow: hidden;
+                        span{
+                            width: 54px;
+                            float: $left;
+                        }
+                        div{
+                            line-height: 26px;
+                            text-align: $center;
+                            padding: 0 16px;
+                            border: 2px solid #b4a078;
+                            float: $left;
+                        }
+                    }
+                    .c-2{
+                        margin-top: 10px;
+                        background-color: #fff;
+                        overflow: hidden;
+                        
+                        span{
+                            width: 54px;
+                            line-height: 30px;
+                            float: $left;
+                        }
+                        .btn-box{
+                            border: 1px solid #ccc;
+                            float: $left;
+                            .btn-1{
+                                width: 36px;
+                                height: 30px;
+                                line-height: 28px;
+                                float: left;
+                                background-color: #fff;
+                                color: #ccc;
+                                cursor: pointer;
+                                border: none;
+                                border-right: 1px solid #ccc;
+                            }
+                            div{
+                                width: 60px;
+                                height: 30px;
+                                text-align: $center;
+                                line-height: 26px;
+                                float: left;
+                                background-color: #fff;
+                                outline: 0;
+                                border: 0;
+                                box-sizing: border-box;
+                            }
+                            .btn-2{
+                                width: 36px;
+                                height: 30px;
+                                line-height: 28px;
+                                float: left;
+                                background-color: #fff;
+                                color: #ccc;
+                                cursor: pointer;
+                                border: none;
+                                border-left: 1px solid #ccc;
+                            }
+                        }
+
+                    }
+                }
+                .rig-b{
+                    margin-left: 12px;
+                    margin-top: 30px;
+                    // background-color: pink;
+                    overflow: hidden;
+                    float: left;
+                    margin-bottom: 20px;
+                    .b-1{
+                        margin-right: 10px;
+                        float: left;
+                        width: 168px;
+                        height: 50px;
+                        line-height: 50px;
+                        font-size: 18px;
+                        text-align: center;
+                        background-color: #f5f3ef;
+                        border: 1px solid #b4a078;
+                        color: #b4a078;
+                    }
+                    .b-2{
+                        font-weight: bold;
+                        color: #fff;
+                        float: $left;
+                        width: 168px;
+                        line-height: 50px;
+                        height: 50px;
+                        text-align: $center;
+                        background-color: #b4a078;
+                        margin-right: 10px;
+                        cursor: pointer;
+                        span{
+                            margin-right: 8px;
+                        }
+                    }
+                    .b-3{
+                        float: left;
+                        position: relative;
+                        height: 50px;
+                        width: 50px;
+                        border: 1px solid #ccc;
+                        overflow: hidden;
+                        vertical-align: middle;
+                        text-align: center;
+                        cursor: pointer;
+                        span{
+                            position: relative;
+                            margin-top: 6px;
+                            color: #999;
+                            height: 24px;
+                        }
+                        div{
+                            font-size: 13px;
+                            color: #999;
+                            margin-top: 6px;
+                        }
+                        
+                    }
                 }
             }
         }

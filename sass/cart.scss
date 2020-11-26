@@ -1,0 +1,80 @@
+.wrap{
+    width: 1000px;
+    margin: 0 auto;
+}
+.header{
+    background: #eee;
+}
+.header h1{
+    line-height: 80px;
+    text-align: center;
+    font-size: 30px;
+}
+.title{
+    line-height: 40px;
+    background-color: #ccc;
+    overflow: hidden;
+    margin-top: 30px;
+}
+.title span{
+    font-size: 14px;
+    color: #333;
+}
+.a1{
+    margin-left: 150px;
+}
+.a2{
+    margin-left: 100px;
+
+}
+.a3{
+    margin-left: 450px;
+
+}
+.a4{
+    margin-left: 100px;
+}
+.list li{
+    margin: 10px 0;
+    overflow: hidden;
+    background:#f5f3ef;
+}
+.list li img{
+    width: 80px;
+    height: 80px;
+    float: left;
+}
+.list li h3{
+    float: left;
+    margin-left: 10px;
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    padding: 10px 0;
+    text-indent:2em;
+}
+.list li p{
+    float: left;
+    margin-left: 15px;
+    width: 100px;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 20px;
+}
+.list li span{
+    float: left;
+    margin-left: 386px;
+    width: 100px;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 20px;
+}
+.list li em{
+    float: left;
+    margin-left: 22px;
+    width: 100px;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 20px;
+}
